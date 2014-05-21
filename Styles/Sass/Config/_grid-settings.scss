@@ -1,7 +1,7 @@
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // NEAT OVERRIDES
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~
+///////////////////////////////////////////////////////////////////////////////
 
 // COLUMN WIDTH
 $column: golden-ratio(1em, 3) !default;
@@ -13,7 +13,9 @@ $gutter: golden-ratio(1em, 1) !default;
 $grid-columns: 14 !default;
 
 // MAX-WIDTH OF THE OUTER CONTAINER
-$max-width: 10000px !default;
+$max-width: 1280px !default;
+
+$default-feature: max-width !default;
 
 
 $visual-grid: true !default;
@@ -22,37 +24,29 @@ $visual-grid-index: front !default;
 $visual-grid-opacity: 0.4 !default;
 $visual-grid-breakpoints: () !default;
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 // BREAKPOINTS
-$boot:  new-breakpoint( max-width 1170px 12 );
-$pint:  new-breakpoint( max-width 980px 8 );
-$rocks: new-breakpoint( max-width 768px 4 );
-$shot:  new-breakpoint( max-width 480px 1 );
+///////////////////////////////////////////////////////////////////////////////
+
+// WIDTHS
+$boot-width:  em( 1170 );
+$pint-width:  em( 980 );
+$rocks-width: em( 768 );
+$shot-width:  em( 480 );
 
 
+// HELPERS FOR THE NEW-BREAKPOINT FUNCTIONS
+@import "neat-helpers";
 
-//  MEDIA QUERIE SHORTHAND
-@mixin breakpoint( $point ){
 
-  @if $point == boot {
-    @media only screen and (max-width: 1199px) { @content; }
-  }
+$boot:  new-breakpoint( max-width $boot-width 12 );
+$pint:  new-breakpoint( max-width $pint-width 8 );
+$rocks: new-breakpoint( max-width $rocks-width 4 );
+$shot:  new-breakpoint( max-width $shot-width 1 );
 
-  @else if $point == pint {
-    @media only screen and (max-width: 991px) { @content; }
-  }
 
-  @else if $point == rocks {
-    @media only screen and (max-width: 767px)  { @content; }
-  }
-
-  @else if $point == shot {
-    @media only screen and (max-width: 479px)  { @content; }
-  }
-
-  @else {
-    @media only screen and (max-width: ( $point + px )) { @content; }
-  }
+//  CUSTOM MEDIA QUERIE SHORTHAND
+@mixin custom-break( $point ){
+  @media only screen and ( max-width: ( $point + px )) { @content; }
 }
