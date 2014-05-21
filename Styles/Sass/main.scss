@@ -1,6 +1,33 @@
 
 
+// MIXINS
 @import 'bourbon';
+
+
+// RESET
+@import "Config/normalize";
+
+
+// BASE CONFIGURATION
+@import 'Config/variables';
+@import 'Config/mixins';
+@import 'Config/fonts';
+@import 'bitters';
+
+
+// GRID
 @import "Config/grid-settings";
 @import 'neat';
-@import 'bitters';
+
+
+// COMPONENTS
+@import "Components/header";
+@import "Components/footer";
+
+
+// PAGES
+@import "Pages/global-template";
+@import "Pages/home";
+
+
+// 3RD PARTY PLUGINS

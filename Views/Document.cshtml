@@ -1,7 +1,7 @@
 ﻿@using Orchard.Mvc.Html;
 @using Orchard.UI.Resources;
 @{
-    RegisterLink(new LinkEntry {Type = "image/x-icon", Rel = "shortcut icon", Href = Url.Content("~@Href(Html.ThemePath(WorkContext.CurrentTheme, "/Content/Images/Icons/favicon.ico")});
+    RegisterLink(new LinkEntry {Type = "image/x-icon", Rel = "shortcut icon", Href = Url.Content("@Href(Html.ThemePath(WorkContext.CurrentTheme, '/Content/Images/Icons/favicon.ico'))")});
 
     Style.Include("main.css");
 
@@ -27,7 +27,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <title>@Html.Title(title, siteName)</title>
+
     @Display(Model.Head)
 
     @* TODO: ADD DESCRIPTION *@

@@ -1,0 +1,58 @@
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
+// NEAT OVERRIDES
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// COLUMN WIDTH
+$column: golden-ratio(1em, 3) !default;
+
+// GUTTER BETWEEN EACH TWO COLUMNS
+$gutter: golden-ratio(1em, 1) !default;
+
+// TOTAL NUMBER OF COLUMNS IN THE GRID
+$grid-columns: 14 !default;
+
+// MAX-WIDTH OF THE OUTER CONTAINER
+$max-width: 10000px !default;
+
+
+$visual-grid: true !default;
+$visual-grid-color: red !default;
+$visual-grid-index: front !default;
+$visual-grid-opacity: 0.4 !default;
+$visual-grid-breakpoints: () !default;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+// BREAKPOINTS
+$boot:  new-breakpoint( max-width 1170px 12 );
+$pint:  new-breakpoint( max-width 980px 8 );
+$rocks: new-breakpoint( max-width 768px 4 );
+$shot:  new-breakpoint( max-width 480px 1 );
+
+
+
+//  MEDIA QUERIE SHORTHAND
+@mixin breakpoint( $point ){
+
+  @if $point == boot {
+    @media only screen and (max-width: 1199px) { @content; }
+  }
+
+  @else if $point == pint {
+    @media only screen and (max-width: 991px) { @content; }
+  }
+
+  @else if $point == rocks {
+    @media only screen and (max-width: 767px)  { @content; }
+  }
+
+  @else if $point == shot {
+    @media only screen and (max-width: 479px)  { @content; }
+  }
+
+  @else {
+    @media only screen and (max-width: ( $point + px )) { @content; }
+  }
+}
