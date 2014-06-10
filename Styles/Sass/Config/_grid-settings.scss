@@ -1,16 +1,17 @@
 
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
 // NEAT OVERRIDES
-///////////////////////////////////////////////////////////////////////////////
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // COLUMN WIDTH
-$column: golden-ratio(1em, 3) !default;
+$column: ceil(golden-ratio(1em, 3)) !default;
 
 // GUTTER BETWEEN EACH TWO COLUMNS
-$gutter: golden-ratio(1em, 1) !default;
+$gutter: floor(golden-ratio(1em, 1)) !default;
 
 // TOTAL NUMBER OF COLUMNS IN THE GRID
-$grid-columns: 14 !default;
+$grid-columns: 12 !default;
 
 // MAX-WIDTH OF THE OUTER CONTAINER
 $max-width: 1280px !default;
@@ -20,14 +21,15 @@ $default-feature: max-width !default;
 
 $visual-grid: true !default;
 $visual-grid-color: red !default;
-$visual-grid-index: front !default;
+$visual-grid-index: back !default;
 $visual-grid-opacity: 0.4 !default;
 $visual-grid-breakpoints: () !default;
 
 
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
 // BREAKPOINTS
-///////////////////////////////////////////////////////////////////////////////
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // WIDTHS
 $boot-width:  em( 1170 );

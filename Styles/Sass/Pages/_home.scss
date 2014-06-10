@@ -1,0 +1,51 @@
+
+
+#main {
+  @include outer-container();
+}
+
+
+.blog {
+  @include span-columns( 12 );
+
+  @include media( $pint ) {
+    @include span-columns( 8 );
+  }
+
+  @include media( $rocks ) {
+    @include span-columns( 4 );
+  }
+}
+
+
+.block {
+  @include span-columns( 3 );
+  height: 100px;
+  border: 1px solid red;
+  margin-bottom: golden-ratio(1em, 1);
+  color: white;
+  text-align: center;
+  padding: golden-ratio(1em, 1);
+
+  &.row-1 {
+    background-color: blue;
+  }
+
+  &.row-2 {
+    background-color: green;
+  }
+
+
+  @include media( $pint ) {
+    @include span-columns( 2 );
+  }
+
+  @include media( $rocks ) {
+    // @include span-columns( 1 );
+  }
+
+  @include media( $shot ) {
+    @include span-columns( 1 );
+  }
+
+}
