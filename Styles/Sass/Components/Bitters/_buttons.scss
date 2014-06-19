@@ -1,0 +1,18 @@
+button,
+input[type="submit"] {
+  @extend %button;
+  @include appearance(none);
+  // @include font( accent-bold );
+  font-size: 12px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 18px 20px 18px 24px;
+
+  i {
+    font-size: 12px;
+  }
+}

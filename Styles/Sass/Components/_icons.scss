@@ -1,0 +1,58 @@
+
+
+// GENERATE FLAT ICONS AT http://fontello.com/
+
+ [class^="icon-"]:before,
+ [class*=" icon-"]:before,
+ .icon-facebook-squared:before,
+ .icon-rss:before,
+ .icon-twitter:before,
+ .icon-linkedin:before,
+ .icon-search:before,
+ .icon-menu-1:before,
+ .icon-arrow-right:before,
+ .icon-arrow-up:before,
+ .icon-arrow-left:before,
+ .icon-arrow-down:before,
+ .icon-sort:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-facebook-squared:before { content: '\e800'; } /* '' */
+.icon-rss:before { content: '\e801'; } /* '' */
+.icon-twitter:before { content: '\e802'; } /* '' */
+.icon-linkedin:before { content: '\e803'; } /* '' */
+.icon-search:before { content: '\e804'; } /* '' */
+.icon-menu-1:before { content: '\e805'; } /* '' */
+.icon-arrow-right:before { content: '\e806'; } /* '' */
+.icon-arrow-up:before { content: '\e807'; } /* '' */
+.icon-arrow-left:before { content: '\e808'; } /* '' */
+.icon-arrow-down:before { content: '\e809'; } /* '' */
+.icon-sort:before { content: '\e80a'; } /* '' */

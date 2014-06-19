@@ -1,0 +1,34 @@
+
+
+// @include font-face( 'Forum', $fonts-path + 'Forum-Regular' );
+
+
+// @media screen and (-webkit-min-device-pixel-ratio:0) {
+//   @font-face {
+//     font-family: 'fontello';
+//     src: url('../font/fontello.svg?27907283#fontello') format('svg');
+//   }
+// }
+
+
+
+// MIXIN ABSTRACTIONS
+// @mixin font( $face ){
+
+//   //  FORUM
+//   //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//   @if ( $face == header ){
+//     font-family: 'Forum';
+//     line-height: 1;
+//     text-transform: uppercase;
+//   }
+
+//   //  SABON
+//   //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//   @if ( $face == body ){
+//     font-family: 'Sabon Roman';
+//     font-weight: normal;
+//     font-style: normal;
+//   }
+
+// }

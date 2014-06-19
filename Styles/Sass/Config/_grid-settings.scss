@@ -47,6 +47,11 @@ $pint:  new-breakpoint( max-width $pint-width 8 );
 $rocks: new-breakpoint( max-width $rocks-width 4 );
 $shot:  new-breakpoint( max-width $shot-width 1 );
 
+$boot-up: new-breakpoint( min-width $boot-width 12 );
+$pint-up: new-breakpoint( min-width $pint-width 8 );
+$rocks-up: new-breakpoint( min-width $rocks-width 4 );
+$shot-up: new-breakpoint( min-width $shot-width 1 );
+
 
 //  CUSTOM MEDIA QUERIE SHORTHAND
 @mixin custom-break( $point ){

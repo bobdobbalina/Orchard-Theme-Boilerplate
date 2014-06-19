@@ -1,3 +1,11 @@
+
+
+//@prepros-append Vendor/jquery.validate.js
+//@prepros-append Vendor/jquery-ui-1.10.3.custom.js
+//@prepros-append Vendor/jquery.selectBoxIt.js
+//@prepros-append Vendor/jquery.screwdefaultbuttonsV2.js
+
+
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;

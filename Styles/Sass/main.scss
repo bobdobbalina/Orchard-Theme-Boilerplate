@@ -12,7 +12,8 @@
 @import 'Config/variables';
 @import 'Config/mixins';
 @import 'Config/fonts';
-@import 'bitters';
+@import 'Config/utils';
+@import 'Components/Bitters/base';
 
 
 // GRID
@@ -21,8 +22,12 @@
 
 
 // COMPONENTS
+@import "Components/icons";
+@import "Components/checkboxes";
+@import "Components/select-box-it";
 @import "Components/header";
 @import "Components/footer";
+@import "Components/main-nav";
 
 
 // PAGES

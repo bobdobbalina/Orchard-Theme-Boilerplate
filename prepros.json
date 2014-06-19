@@ -1,0 +1,450 @@
+{
+  "id": "c21be631",
+  "cfgVersion": 1,
+  "name": "Orchard-Theme-Boilerplate",
+  "files": {
+    "fc8ed523": {
+      "id": "fc8ed523",
+      "pid": "c21be631",
+      "name": "main.scss",
+      "input": "Styles/Sass/main.scss",
+      "customOutput": false,
+      "type": "Scss",
+      "config": {
+        "autoCompile": true,
+        "lineNumbers": false,
+        "unixNewlines": false,
+        "sourcemaps": false,
+        "debug": false,
+        "compass": false,
+        "fullCompass": false,
+        "outputStyle": "expanded",
+        "autoprefixer": false
+      }
+    },
+    "2e8f9ea2": {
+      "id": "2e8f9ea2",
+      "pid": "c21be631",
+      "name": "README.md",
+      "input": "README.md",
+      "customOutput": false,
+      "type": "Md",
+      "config": {
+        "autoCompile": true,
+        "sanitize": false,
+        "gfm": true
+      }
+    },
+    "8211c77f": {
+      "id": "8211c77f",
+      "pid": "c21be631",
+      "name": "main.js",
+      "input": "Scripts/main.js",
+      "customOutput": false,
+      "type": "Js",
+      "config": {
+        "autoCompile": true,
+        "uglify": false,
+        "mangle": true,
+        "sourcemaps": false
+      }
+    },
+    "e4558304": {
+      "id": "e4558304",
+      "pid": "c21be631",
+      "name": "plugins.js",
+      "input": "Scripts/plugins.js",
+      "customOutput": false,
+      "type": "Js",
+      "config": {
+        "autoCompile": true,
+        "uglify": true,
+        "mangle": true,
+        "sourcemaps": true
+      }
+    }
+  },
+  "imports": {
+    "86101531": {
+      "id": "86101531",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/_checkboxes.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "8ff88a64": {
+      "id": "8ff88a64",
+      "pid": "c21be631",
+      "path": "Scripts/Vendor/jquery.validate.js",
+      "parents": [
+        "e4558304"
+      ]
+    },
+    "e473083e": {
+      "id": "e473083e",
+      "pid": "c21be631",
+      "path": "Scripts/Vendor/jquery-ui-1.10.3.custom.js",
+      "parents": [
+        "e4558304"
+      ]
+    },
+    "8b9c45ba": {
+      "id": "8b9c45ba",
+      "pid": "c21be631",
+      "path": "Scripts/Vendor/jquery.selectBoxIt.js",
+      "parents": [
+        "e4558304"
+      ]
+    },
+    "e18fc38e": {
+      "id": "e18fc38e",
+      "pid": "c21be631",
+      "path": "Scripts/Vendor/jquery.screwdefaultbuttonsV2.js",
+      "parents": [
+        "e4558304"
+      ]
+    },
+    "5551cd86": {
+      "id": "5551cd86",
+      "pid": "c21be631",
+      "path": "Scripts/NorthernGround/Client.Main.js",
+      "parents": [
+        "8211c77f"
+      ]
+    },
+    "e392a7c4": {
+      "id": "e392a7c4",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Config/_normalize.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "49271e75": {
+      "id": "49271e75",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Config/_variables.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "987d97e8": {
+      "id": "987d97e8",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Config/_mixins.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "96aec8df": {
+      "id": "96aec8df",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Config/_fonts.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "8f9a7595": {
+      "id": "8f9a7595",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Config/_grid-settings.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "6b19ff80": {
+      "id": "6b19ff80",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/_header.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "c038f997": {
+      "id": "c038f997",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/_footer.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "30fa82ed": {
+      "id": "30fa82ed",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Pages/_global-template.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "bc06df75": {
+      "id": "bc06df75",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Pages/_home.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "1a195808": {
+      "id": "1a195808",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/Bitters/_base.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "52f43752": {
+      "id": "52f43752",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/Bitters/_variables.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "51c79e5e": {
+      "id": "51c79e5e",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/Bitters/_grid-settings.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "5b6de53f": {
+      "id": "5b6de53f",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/Bitters/extends/_button.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "3e884537": {
+      "id": "3e884537",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/Bitters/extends/_clearfix.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "0868fea0": {
+      "id": "0868fea0",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/Bitters/extends/_errors.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "c4f90430": {
+      "id": "c4f90430",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/Bitters/extends/_flashes.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "12fcdbe7": {
+      "id": "12fcdbe7",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/Bitters/extends/_hide-text.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "95e32061": {
+      "id": "95e32061",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/Bitters/_typography.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "fed752e1": {
+      "id": "fed752e1",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/Bitters/_forms.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "a15ccd97": {
+      "id": "a15ccd97",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/Bitters/_tables.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "33c67e80": {
+      "id": "33c67e80",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/Bitters/_lists.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "153aa95f": {
+      "id": "153aa95f",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/Bitters/_buttons.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "572ec7b7": {
+      "id": "572ec7b7",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/_icons.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "210fd2f9": {
+      "id": "210fd2f9",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/_select-box-it.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "91d6d57f": {
+      "id": "91d6d57f",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Components/_main-nav.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
+    "03eb61b7": {
+      "id": "03eb61b7",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Config/_utils.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    }
+  },
+  "images": {
+    "5ccd4ca2": {
+      "id": "5ccd4ca2",
+      "pid": "c21be631",
+      "path": "Content/Images/Icons/apple-touch-icon-114x114.png",
+      "size": 5446,
+      "name": "apple-touch-icon-114x114.png",
+      "type": "Png",
+      "initialSize": 5446,
+      "status": "NOT_OPTIMIZED"
+    },
+    "b17f2ab8": {
+      "id": "b17f2ab8",
+      "pid": "c21be631",
+      "path": "Content/Images/Icons/apple-touch-icon-120x120.png",
+      "size": 8712,
+      "name": "apple-touch-icon-120x120.png",
+      "type": "Png",
+      "initialSize": 8712,
+      "status": "NOT_OPTIMIZED"
+    },
+    "d1d29ac0": {
+      "id": "d1d29ac0",
+      "pid": "c21be631",
+      "path": "Content/Images/Icons/apple-touch-icon-144x144.png",
+      "size": 12366,
+      "name": "apple-touch-icon-144x144.png",
+      "type": "Png",
+      "initialSize": 12366,
+      "status": "NOT_OPTIMIZED"
+    },
+    "6cdbc2a6": {
+      "id": "6cdbc2a6",
+      "pid": "c21be631",
+      "path": "Content/Images/Icons/apple-touch-icon-152x152.png",
+      "size": 3019,
+      "name": "apple-touch-icon-152x152.png",
+      "type": "Png",
+      "initialSize": 3019,
+      "status": "NOT_OPTIMIZED"
+    },
+    "4113fa2e": {
+      "id": "4113fa2e",
+      "pid": "c21be631",
+      "path": "Content/Images/Icons/apple-touch-icon-57x57.png",
+      "size": 2214,
+      "name": "apple-touch-icon-57x57.png",
+      "type": "Png",
+      "initialSize": 2214,
+      "status": "NOT_OPTIMIZED"
+    },
+    "184c0fdc": {
+      "id": "184c0fdc",
+      "pid": "c21be631",
+      "path": "Content/Images/Icons/apple-touch-icon-72x72.png",
+      "size": 3875,
+      "name": "apple-touch-icon-72x72.png",
+      "type": "Png",
+      "initialSize": 3875,
+      "status": "NOT_OPTIMIZED"
+    },
+    "ebc4adc1": {
+      "id": "ebc4adc1",
+      "pid": "c21be631",
+      "path": "Content/Images/Icons/apple-touch-icon-76x76.png",
+      "size": 2213,
+      "name": "apple-touch-icon-76x76.png",
+      "type": "Png",
+      "initialSize": 2213,
+      "status": "NOT_OPTIMIZED"
+    },
+    "ef87ca42": {
+      "id": "ef87ca42",
+      "pid": "c21be631",
+      "path": "Content/Images/Icons/apple-touch-icon.png",
+      "size": 2214,
+      "name": "apple-touch-icon.png",
+      "type": "Png",
+      "initialSize": 2214,
+      "status": "NOT_OPTIMIZED"
+    },
+    "1f1ff848": {
+      "id": "1f1ff848",
+      "pid": "c21be631",
+      "path": "Theme.png",
+      "size": 125324,
+      "name": "Theme.png",
+      "type": "Png",
+      "initialSize": 125324,
+      "status": "NOT_OPTIMIZED"
+    }
+  },
+  "config": {
+    "watch": true,
+    "liveRefresh": true,
+    "liveRefreshDelay": 0,
+    "filterPatterns": "",
+    "useCustomServer": false,
+    "customServerUrl": "",
+    "cssPath": "",
+    "jsPath": "js/",
+    "htmlPath": "html/",
+    "minJsPath": "",
+    "htmlExtension": ".html",
+    "cssPathType": "REPLACE_TYPE",
+    "htmlPathType": "REPLACE_TYPE",
+    "jsPathType": "REPLACE_TYPE",
+    "minJsPathType": "RELATIVE_FILEDIR",
+    "htmlTypes": "jade, haml, slim, markdown, md",
+    "cssTypes": "less, sass, stylus, scss, styl",
+    "jsTypes": "coffee, coffeescript, coffeescripts, ls, livescript, livescripts",
+    "cssPreprocessorPath": "",
+    "htmlPreprocessorPath": "",
+    "jsPreprocessorPath": "",
+    "minJsPreprocessorPath": "",
+    "autoprefixerBrowsers": "",
+    "ftpHost": "",
+    "ftpPort": "21",
+    "ftpRemotePath": "",
+    "ftpIgnorePreprocessorFiles": true,
+    "ftpType": "FTP",
+    "ftpExcludePatterns": "",
+    "ftpPassword": "",
+    "ftpUsername": ""
+  }
+}
