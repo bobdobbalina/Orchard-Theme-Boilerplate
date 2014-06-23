@@ -1,0 +1,100 @@
+
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+// SVG BACKGROUND IMAGES WITH BITMAP FALLBACK (REQUIRES MODERNIZR)
+@mixin svg-background( $name, $fallback-extension: 'png', $size: false ){
+
+  background-image: url( #{$images-path}#{$name}.svg );
+
+  @if( $size ){
+    background-size: $size;
+  }
+  .no-svg & {
+    background-image: url( #{$images-path}#{$name}.#{$fallback-extension} );
+  }
+}
+
+
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+
+
+@mixin truncateText($overflow: ellipsis){
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: $overflow; // values are: clip, ellipsis, or a string
+}
+
+
+
+// A TOOLTIP THAT GRABS ITS TEXT CONTENT FROM AN HTML5 "DATA-TOOLTIP" PROPERTY
+@mixin tooltip($content: attr(data-tooltip), $direction: top) {
+  position: relative;
+  &:before, &:after {
+    display: none;
+    z-index: 98;
+  }
+  &:hover {
+    &:after { // for text bubble
+      content: $content;
+      display: block;
+      position: absolute;
+      height: 12px; // (makes total height including padding 22px)
+      padding: 6px;
+      font-size: 12px;
+      white-space: nowrap;
+      color: #fff;
+      @include text-shadow(1px 1px #000);
+      background-color: #222;
+    }
+    @if ($direction == 'top'){
+      &:before {
+        @include triangle( 6px, #222, down );
+        top: -6px; margin-top: 0;
+        left: 47%;
+      }
+      &:after {
+        top: -28px;
+        left: 47%; margin-left: -20px;
+      }
+    }
+    @else if ($direction == 'bottom'){
+      &:before {
+        @include triangle(up, 6px, #222);
+        top: auto; margin-top: 0;
+        bottom: -6px;
+        left: 47%;
+      }
+      &:after {
+        bottom: -28px;
+        left: 47%; margin-left: -20px;
+      }
+    }
+  }
+}
+
+
+
+@mixin box-emboss($opacity, $opacity2){
+    box-shadow:white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+}
+
+
+
+@mixin letterpress($opacity){
+    text-shadow:white($opacity) 0 1px 0;
+}
+
+
+

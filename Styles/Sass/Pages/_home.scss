@@ -2,6 +2,10 @@
 
 #main {
   @include outer-container();
+
+  .tits {
+    @include svg-background( 'Global/bill' );
+  }
 }
 
 

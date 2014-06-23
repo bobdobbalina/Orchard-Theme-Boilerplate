@@ -73,6 +73,14 @@
         "fc8ed523"
       ]
     },
+    "90720465": {
+      "id": "90720465",
+      "pid": "c21be631",
+      "path": "Styles/Sass/Config/_normalize-opentype.scss",
+      "parents": [
+        "fc8ed523"
+      ]
+    },
     "8ff88a64": {
       "id": "8ff88a64",
       "pid": "c21be631",
