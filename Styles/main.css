@@ -1164,12 +1164,6 @@ body:before {
 #main:after {
   clear: both;
 }
-#main .tits {
-  background-image: url(/Themes/NorthernGround/Content/Images/Global/bill.svg);
-}
-.no-svg #main .tits {
-  background-image: url(/Themes/NorthernGround/Content/Images/Global/bill.png);
-}
 
 .blog {
   float: left;

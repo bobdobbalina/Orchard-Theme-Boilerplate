@@ -22,7 +22,7 @@
 
 
 
-@mixin opacity($opacity) {
+@mixin opacity( $opacity ) {
   opacity: $opacity;
   $opacity-ie: $opacity * 100;
   filter: alpha(opacity=$opacity-ie); //IE8
@@ -30,7 +30,7 @@
 
 
 
-@mixin truncateText($overflow: ellipsis){
+@mixin truncateText( $overflow: ellipsis ){
   overflow: hidden;
   white-space: nowrap;
   text-overflow: $overflow; // values are: clip, ellipsis, or a string
@@ -39,7 +39,7 @@
 
 
 // A TOOLTIP THAT GRABS ITS TEXT CONTENT FROM AN HTML5 "DATA-TOOLTIP" PROPERTY
-@mixin tooltip($content: attr(data-tooltip), $direction: top) {
+@mixin tooltip( $content: attr( data-tooltip ), $direction: top ) {
   position: relative;
   &:before, &:after {
     display: none;
@@ -97,4 +97,12 @@
 }
 
 
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
